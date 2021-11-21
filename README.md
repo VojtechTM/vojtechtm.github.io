@@ -1,3 +1,8 @@
+---
+layout: page
+title: default
+order: 2
+---
 
 ## Welcome to GitHub Pages
 
