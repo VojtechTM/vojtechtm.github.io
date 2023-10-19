@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    padding: 2vw;
+    text-decoration: none;
+    color: black;
+}
+
+.grid {
+    display: grid;
+}
