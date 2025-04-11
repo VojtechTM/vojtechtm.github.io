@@ -1,33 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vojtěch Vengrin – Osobní stránka</title>
+        <style>
+            body {
+                margin: 0;
+                background-color: #ffecec;
+                font-family: "Georgia", serif;
+                color: #222;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Vojtěch Vengrin">
-    <link rel="stylesheet" href="style.css">
-    <title>I'm the Avatar!</title>
-</head>
+            header {
+                background-color: #5dbb4d;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 30px;
+            }
 
-<body>
-    <nav>
-        <a class="nav" href="#">Home</a>
-        <a class="nav" href="#">Blog</a>
-        <a class="nav" href="#">About me</a>
-    </nav>
-    <main>
-        <section class="grid">
-            <div class="main">
-                <p class="avatar"></p> <comment>Here comes the icon</comment>
-                <h1>Vojtěch Vengrin</h1>
-                <p></p>
+            .logo {
+                background-color: white;
+                border-radius: 50%;
+                padding: 5px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .logo img {
+                width: 24px;
+                height: 24px;
+            }
+
+            nav a {
+                text-decoration: none;
+                background-color: white;
+                padding: 8px 16px;
+                margin-left: 10px;
+                border-radius: 20px;
+                color: #000;
+                font-weight: bold;
+                font-family: serif;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 60px 30px;
+                gap: 60px;
+                flex-wrap: wrap;
+            }
+
+            .photos {
+                position: relative;
+                width: 280px;
+                height: 340px;
+            }
+
+            .polaroid {
+                width: 200px;
+                padding: 10px;
+                background: white;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+                position: absolute;
+                transform: rotate(-5deg);
+            }
+
+            .polaroid:nth-child(2) {
+                left: 40px;
+                top: 20px;
+                transform: rotate(5deg);
+            }
+
+            .polaroid:nth-child(3) {
+                left: 20px;
+                top: 100px;
+                transform: rotate(-3deg);
+            }
+
+            .polaroid img {
+                width: 100%;
+            }
+
+            .text-box {
+                background-color: white;
+                border: 2px solid #c3e6c3;
+                padding: 30px;
+                max-width: 400px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+            }
+
+            .text-box h1 {
+                font-style: italic;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            .text-box p {
+                margin-bottom: 12px;
+                line-height: 1.5;
+            }
+
+            .signature {
+                text-align: right;
+                font-style: italic;
+                margin-top: 20px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="pirate-logo.png" alt="Logo" />
             </div>
-            <div class="card"></div>
-        </section>
-    </main>
-    <footer>
-        Vojtěch Vengrin, 2023
-    </footer>
-</body>
+            <nav>
+                <a href="#">Domů</a>
+                <a href="#">Kariéra</a>
+                <a href="#">Politika</a>
+            </nav>
+        </header>
 
+        <div class="container">
+            <div class="photos">
+                <div class="polaroid">
+                    <img src="img/Instax photo.png" alt="Vojtěch 1" />
+                </div>
+                <div class="polaroid">
+                    <img src="foto2.jpg" alt="Vojtěch 2" />
+                </div>
+                <div class="polaroid">
+                    <img src="foto3.jpg" alt="Vojtěch 3" />
+                </div>
+            </div>
+
+            <div class="text-box">
+                <h1>Vítejte na mé osobní stránce!</h1>
+                <p>
+                    Jmenuji se <strong>Vojtěch Vengrin</strong> a je mi
+                    <strong>19 let</strong>. Pocházím ze Středočeského kraje a v
+                    současné době studuji obor <em>IT Administrace</em> na
+                    <em>Mendelově univerzitě</em>.
+                </p>
+                <p>
+                    Kromě mého zájmu o technologie a informatiku jsem také
+                    politicky aktivní. Jsem členem <em>Pirátské strany</em>, kde
+                    se snažím přispět k pozitivním změnám ve společnosti.
+                </p>
+                <p>
+                    Na této stránce najdete více informací o mně, mé aktivity a
+                    projekty, na kterých pracuji. Pokud máte nějaké otázky nebo
+                    se chcete se mnou spojit, neváhejte mě kontaktovat!
+                </p>
+                <div class="signature">Vojtěch</div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,3 +1,15 @@
+/* CSS HEX */
+--hunyadi-yellow: #eca72cff;
+--kelly-green: #5fad41ff;
+--smoky-black: #14110fff;
+--seashell: #fff3f0ff;
+
+/* CSS HSL */
+--hunyadi-yellow: hsla(38, 83%, 55%, 1);
+--kelly-green: hsla(103, 45%, 47%, 1);
+--smoky-black: hsla(24, 14%, 7%, 1);
+--seashell: hsla(12, 100%, 97%, 1);
+
 nav {
     display: flex;
     flex-direction: row;
