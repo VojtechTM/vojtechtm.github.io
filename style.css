@@ -18,6 +18,9 @@ header {
     justify-content: space-between;
     padding: 10px 10px;
     border-radius: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .logo {
@@ -37,12 +40,13 @@ header {
 
 nav a {
     text-decoration: none;
-    background-color: white;
-    padding: 13px 16px;
+    background-color: #fff3f0ff;
+    padding: 10px 16px;
     margin-left: 10px;
     border-radius: 20px;
     color: #000;
     font-family: "Times New Roman", Times, serif;
+    cursor: pointer;
 }
 
 .container {
