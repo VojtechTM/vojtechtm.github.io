@@ -7,7 +7,7 @@
 body {
     margin: 0;
     background-color: #fff3f0ff;
-    font-family: "Georgia", serif;
+    font-family: "Times new roman", serif;
     color: #222;
 }
 
@@ -31,19 +31,18 @@ header {
 }
 
 .logo img {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
 }
 
 nav a {
     text-decoration: none;
     background-color: white;
-    padding: 10px 16px;
+    padding: 13px 16px;
     margin-left: 10px;
     border-radius: 20px;
     color: #000;
-    font-weight: bold;
-    font-family: serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .container {
@@ -97,8 +96,8 @@ nav a {
 }
 
 .text-box h1 {
-    font-style: italic;
-    font-size: 22px;
+    font-family: "Italianno", cursive;
+    font-size: 33px;
     margin-bottom: 20px;
 }
 
@@ -109,9 +108,9 @@ nav a {
 
 .signature {
     text-align: right;
-    font-style: italic;
+    font-family: "Italianno", cursive;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 33px;
 }
 
 em {
