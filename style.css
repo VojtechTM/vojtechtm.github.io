@@ -10,17 +10,115 @@
 --smoky-black: hsla(24, 14%, 7%, 1);
 --seashell: hsla(12, 100%, 97%, 1);
 
-nav {
+body {
+    margin: 0;
+    background-color: --seashell;
+    font-family: "Georgia", serif;
+    color: #222;
+}
+
+header {
+    background-color: --kelly-green;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
 }
 
-.nav {
-    padding: 2vw;
+.logo {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+}
+
+nav a {
     text-decoration: none;
-    color: black;
+    background-color: white;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 20px;
+    color: #000;
+    font-weight: bold;
+    font-family: serif;
 }
 
-.grid {
-    display: grid;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 30px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.photos {
+    position: relative;
+    width: 280px;
+    height: 340px;
+}
+
+.polaroid {
+    width: 200px;
+    padding: 10px;
+    background: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transform: rotate(-5deg);
+}
+
+.polaroid:nth-child(2) {
+    left: 40px;
+    top: 20px;
+    transform: rotate(5deg);
+}
+
+.polaroid:nth-child(3) {
+    left: 20px;
+    top: 100px;
+    transform: rotate(-3deg);
+}
+
+.polaroid img {
+    width: 100%;
+}
+
+.text-box {
+    background-color: white;
+    border: 2px solid #c3e6c3;
+    padding: 30px;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.text-box h1 {
+    font-style: italic;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+em {
+    font-style: italic;
 }
