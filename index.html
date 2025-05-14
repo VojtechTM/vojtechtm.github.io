@@ -17,7 +17,8 @@
             <div class="logo">
                 <img src="img/logo.png" alt="Logo" />
             </div>
-            <nav>
+            <button class="hamburger">☰</button>
+            <nav class="nav-links">
                 <a href="#">Domů</a>
                 <a href="#">Projekty</a>
                 <a href="#">Kontakt</a>
@@ -50,5 +51,14 @@
                 <div class="signature">Vojtěch</div>
             </div>
         </div>
+        <script>
+            document
+                .querySelector(".hamburger")
+                .addEventListener("click", function () {
+                    document
+                        .querySelector(".nav-links")
+                        .classList.toggle("active");
+                });
+        </script>
     </body>
 </html>

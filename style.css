@@ -1,26 +1,26 @@
 /* CSS HEX */
---hunyadi-yellow: #eca72cff;
---kelly-green: #5fad41ff;
---smoky-black: #14110fff;
---seashell: #fff3f0ff;
+:root {
+    --hunyadi-yellow: #eca72cff;
+    --kelly-green: #5fad41ff;
+    --smoky-black: #14110fff;
+    --seashell: #fff3f0ff;
+}
 
 body {
     margin: 0;
-    background-color: #fff3f0ff;
-    font-family: "Times new roman", serif;
+    background-color: var(--seashell);
+    font-family: "Times New Roman", serif;
     color: #222;
 }
 
 header {
-    background-color: #5fad41ff;
+    background-color: var(--kelly-green);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 40px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 25px;
 }
 
 .logo {
@@ -40,7 +40,7 @@ header {
 
 nav a {
     text-decoration: none;
-    background-color: #fff3f0ff;
+    background-color: var(--seashell);
     padding: 10px 16px;
     margin-left: 10px;
     border-radius: 20px;
@@ -53,19 +53,21 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 60px 30px;
-    gap: 60px;
+    padding: 20px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .photos {
     position: relative;
-    width: 280px;
-    height: 340px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
 }
 
 .polaroid {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     padding: 10px;
     background: white;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
@@ -74,13 +76,13 @@ nav a {
 }
 
 .polaroid:nth-child(2) {
-    left: 40px;
+    left: 20px;
     top: 20px;
     transform: rotate(5deg);
 }
 
 .polaroid:nth-child(3) {
-    left: 20px;
+    left: 10px;
     top: 100px;
     transform: rotate(-3deg);
 }
@@ -91,9 +93,9 @@ nav a {
 
 .text-box {
     background-color: white;
-    border: 2px solid #5fad41ff;
-    padding: 30px;
-    max-width: 400px;
+    border: 2px solid var(--kelly-green);
+    padding: 20px;
+    max-width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     margin-top: 5vh;
@@ -101,7 +103,7 @@ nav a {
 
 .text-box h1 {
     font-family: "Italianno", cursive;
-    font-size: 33px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -114,7 +116,7 @@ nav a {
     text-align: right;
     font-family: "Italianno", cursive;
     margin-top: 20px;
-    font-size: 33px;
+    font-size: 28px;
 }
 
 em {
@@ -125,7 +127,70 @@ em {
     body {
         width: 100%;
     }
-    img {
-        width: 90%;
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .photos {
+        width: 100%;
+    }
+
+    .polaroid {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: rotate(0);
+    }
+
+    .text-box {
+        padding: 15px;
+    }
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 }
